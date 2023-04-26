@@ -1,6 +1,7 @@
 import Footer from '@/components/footer';
 import Instructions from '@/components/instructions';
 import NavBar from '@/components/navbar';
+import WinnersPage from '@/components/winnersPage';
 import Head from 'next/head';
 
 export default function Winners() {
@@ -13,7 +14,7 @@ export default function Winners() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <NavBar />
-      <h1>Ganhadores</h1>
+      <WinnersPage />
       <Instructions />
       <Footer />
     </>

@@ -8,7 +8,7 @@ const PageTitle = styled.h1`
   border-bottom: 1px solid white;
 `;
 
-const TermContainer = styled.div`
+export const TermContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 20%;
