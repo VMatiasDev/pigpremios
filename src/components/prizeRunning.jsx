@@ -9,8 +9,8 @@ const CardsContainer = styled.div`
 
 const PulseEffect = styled.div`
   border-radius: 10px;
-  height: 150px;
-  width: 350px;
+  height: 80%;
+  width: 30%;
 
   box-shadow: 0 0 0 0 rgba(112, 212, 75, 1);
   transform: scale(1);
@@ -38,8 +38,8 @@ const PrizeContainer = styled.div`
   cursor: pointer;
   background-color: #262e1f;
   border-radius: 10px;
-  height: 150px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   display: flex;
 `;
 

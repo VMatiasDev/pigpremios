@@ -2,6 +2,7 @@ import Head from 'next/head';
 import NavBar from '@/components/navbar';
 import ActivePrizes from '@/components/activePrizes';
 import Winners from '@/components/winners';
+import Instructions from '@/components/instructions';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <NavBar />
       <ActivePrizes />
       <Winners />
+      <Instructions />
     </>
   );
 }

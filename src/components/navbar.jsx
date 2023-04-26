@@ -8,7 +8,6 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const NavBarContainer = styled.div`
-  width: 100vw;
   height: 8vh;
   background-color: #090909;
   display: flex;

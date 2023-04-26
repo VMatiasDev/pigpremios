@@ -4,7 +4,7 @@ import { Choose, TextContainer, Title } from './activePrizes';
 import { faTrophy, faCreditCard } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const GeneralContainer = styled.div`
+export const GeneralContainer = styled.div`
   display: flex;
   justify-content: space-around;
 `;
