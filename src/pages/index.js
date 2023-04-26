@@ -3,6 +3,7 @@ import NavBar from '@/components/navbar';
 import ActivePrizes from '@/components/activePrizes';
 import Winners from '@/components/winners';
 import Instructions from '@/components/instructions';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <ActivePrizes />
       <Winners />
       <Instructions />
+      <Footer />
     </>
   );
 }
