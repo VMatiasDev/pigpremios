@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PrizeRunning from './prizeRunning';
 
 const Principal = styled.main`
   height: 70vh;
@@ -11,28 +14,29 @@ const Principal = styled.main`
 `;
 
 const Banner = styled.img`
-  width: 60%;
+  width: 72%;
   height: 35%;
   border-radius: 70px 0 70px 0;
   object-fit: cover;
 `;
 
-const TextContainer = styled.div`
+export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 71%;
   padding-top: 20px;
 `;
 
-const Title = styled.h1`
+export const Title = styled.h1`
   border-left: 5px solid #0b0d32;
+  font-size: 1.7rem;
   color: #fff;
   span {
     color: #b62b2b;
   }
 `;
 
-const Choose = styled.p`
+export const Choose = styled.p`
   color: #dddddd;
   margin-top: 10px;
 `;
@@ -44,10 +48,12 @@ export default function ActivePrizes() {
         <Banner src='/moto.png' />
         <TextContainer>
           <Title>
+            <FontAwesomeIcon icon={faStar} color='#FF8A29' height={20} />
             NOSSOS <span>SORTEIOS</span>
           </Title>
           <Choose>Escolha um de nossos sorteios</Choose>
         </TextContainer>
+        <PrizeRunning />
       </Principal>
     </>
   );
