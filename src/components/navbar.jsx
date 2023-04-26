@@ -6,6 +6,7 @@ import {
   faArrowRightToBracket,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 const NavBarContainer = styled.div`
   height: 8vh;
@@ -23,6 +24,7 @@ const Logo = styled.img`
 const NavBarPages = styled.div`
   display: flex;
   gap: 15px;
+
   button {
     cursor: pointer;
     padding: 27px;
@@ -37,6 +39,9 @@ const NavBarPages = styled.div`
       transition: 300ms;
       border-bottom: 3px solid #b62b2b;
     }
+  }
+  a {
+    text-decoration: none;
   }
 `;
 
@@ -65,14 +70,18 @@ export default function NavBar() {
     <NavBarContainer>
       <Logo src='/pig.png' />
       <NavBarPages>
-        <button>
-          <FontAwesomeIcon icon={faStar} color='#dddddd' height={15} />
-          SORTEIOS
-        </button>
-        <button>
-          <FontAwesomeIcon icon={faTrophy} color='#dddddd' height={15} />
-          GANHADORES
-        </button>
+        <Link href='/prizedraw'>
+          <button>
+            <FontAwesomeIcon icon={faStar} color='#dddddd' height={15} />
+            SORTEIOS
+          </button>
+        </Link>
+        <Link href='/winners'>
+          <button>
+            <FontAwesomeIcon icon={faTrophy} color='#dddddd' height={15} />
+            GANHADORES
+          </button>
+        </Link>
       </NavBarPages>
       <NavBarSign>
         <button>

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -61,22 +63,22 @@ export default function Footer() {
       <FooterSection>
         <FooterContainer>
           <LinksContainer>
-            <a href='#'>Home</a>
-            <a href='#'>Sorteios</a>
-            <a href='#'>Termos</a>
-            <a href='#'>Contato</a>
+            <Link href='/'>Home</Link>
+            <Link href='/prizedraw'>Sorteios</Link>
+            <Link href='/terms'>Termos</Link>
+            <Link href='/contact'>Contato</Link>
           </LinksContainer>
           <SocialContainer>
             ESTAMOS NAS REDES SOCIAIS
-            <a href='#'>
+            <Link href='#'>
               <FontAwesomeIcon icon={faFacebook} color='#FF8A29' height={20} />
-            </a>
-            <a href='#'>
+            </Link>
+            <Link href='#'>
               <FontAwesomeIcon icon={faInstagram} color='#FF8A29' height={20} />
-            </a>
-            <a href='https://api.whatsapp.com/send?l=pt_br&phone=5562994505518'>
+            </Link>
+            <Link href='https://api.whatsapp.com/send?l=pt_br&phone=5562994505518'>
               <FontAwesomeIcon icon={faWhatsapp} color='#FF8A29' height={20} />
-            </a>
+            </Link>
           </SocialContainer>
         </FooterContainer>
       </FooterSection>
