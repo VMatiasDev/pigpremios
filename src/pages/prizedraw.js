@@ -1,3 +1,4 @@
+import AllPrizesDraw from '@/components/allPrizesDraw';
 import Footer from '@/components/footer';
 import Instructions from '@/components/instructions';
 import NavBar from '@/components/navbar';
@@ -13,7 +14,7 @@ export default function PrizeDraw() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <NavBar />
-      <h1>Sorteios</h1>
+      <AllPrizesDraw />
       <Instructions />
       <Footer />
     </>

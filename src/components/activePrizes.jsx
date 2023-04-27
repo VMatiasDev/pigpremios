@@ -3,7 +3,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PrizeRunning from './prizeRunning';
 
-const Principal = styled.main`
+export const Principal = styled.main`
   height: 70vh;
   background-color: #181818;
   display: flex;
