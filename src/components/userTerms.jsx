@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const PageTitle = styled.h1`
+export const PageTitle = styled.h1`
   color: #fff;
   font-size: 1.5rem;
   text-align: center;

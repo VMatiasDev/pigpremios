@@ -1,3 +1,4 @@
+import ContactForm from '@/components/contactForm';
 import Footer from '@/components/footer';
 import Instructions from '@/components/instructions';
 import NavBar from '@/components/navbar';
@@ -13,8 +14,7 @@ export default function Contact() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <NavBar />
-      <h1>Contato</h1>
-
+      <ContactForm />
       <Instructions />
       <Footer />
     </>
