@@ -5,7 +5,6 @@ import { TermContainer } from './userTerms';
 import { ALL_ROADS } from './roads';
 import {
   BuyButton,
-  CardsContainer,
   PrizeContainer,
   PrizeImg,
   PrizeSubtitle,
@@ -45,9 +44,15 @@ const PrizeDrawContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   height: 40vh;
-  padding-top: 16px;
+  padding: 32px 20%;
+`;
+
+const CardsContainerPrizesDraw = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 80px;
 `;
 
 export default function AllPrizesDraw() {
@@ -66,7 +71,7 @@ export default function AllPrizesDraw() {
           <FontAwesomeIcon icon={faStar} color='#FF8A29' height={20} />
           NOSSOS <span>SORTEIOS</span>
         </Title>
-        <CardsContainer>
+        <CardsContainerPrizesDraw>
           <PulseEffect>
             <PrizeContainer>
               <PrizeImg src='./prize.jpg'></PrizeImg>
@@ -77,7 +82,7 @@ export default function AllPrizesDraw() {
               </TextContainer>
             </PrizeContainer>
           </PulseEffect>
-        </CardsContainer>
+        </CardsContainerPrizesDraw>
       </PrizeDrawContainer>
     </>
   );
