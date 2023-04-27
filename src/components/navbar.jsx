@@ -68,7 +68,9 @@ const NavBarSign = styled.div`
 export default function NavBar() {
   return (
     <NavBarContainer>
-      <Logo src='/pig.png' />
+      <Link href='/'>
+        <Logo src='/pig.png' />
+      </Link>
       <NavBarPages>
         <Link href='/prizedraw'>
           <button>
