@@ -38,7 +38,7 @@ const LinksContainer = styled.div`
   }
 `;
 
-const SocialContainer = styled.div`
+export const SocialContainer = styled.div`
   display: flex;
   gap: 16px;
   width: 50%;
