@@ -17,6 +17,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import { SocialContainer } from './footer';
+import ImageSlider from './imageSlider';
 
 const ProductContainer = styled.div`
   display: flex;
@@ -64,6 +65,8 @@ const InfoContainer = styled.div`
 
 const ImgSlider = styled.div`
   width: 70%;
+  margin: 0 auto;
+  padding-bottom: 40px;
 `;
 
 const DescriptionContainer = styled.div`
@@ -241,6 +244,14 @@ const WarningPulse = styled.div`
 `;
 
 export default function Product() {
+  const slides = [
+    { url: './moto1.jpg', title: 'Primeira foto' },
+    { url: './moto2.jpg', title: 'Segunda foto' },
+    { url: './moto3.jpg', title: 'Terceira foto' },
+    { url: './moto4.jpg', title: 'Quarta foto' },
+    { url: './moto5.jpg', title: 'Quinta foto' },
+  ];
+
   return (
     <ProductContainer>
       <TitleContainer>
@@ -252,7 +263,9 @@ export default function Product() {
         </BuyButton>
       </TitleContainer>
       <InfoContainer>
-        <ImgSlider></ImgSlider>
+        <ImgSlider>
+          <ImageSlider slides={slides} />
+        </ImgSlider>
         <DescriptionContainer>
           <ProductPrice>
             <h3>POR APENAS</h3>
